@@ -32,9 +32,19 @@ androidExtensions {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     implementation 'androidx.core:core-ktx:1.1.0-alpha04'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-firestore:18.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    implementation 'com.firebaseui:firebase-ui-storage:3.3.1'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
 
     // Navigation
     implementation "android.arch.navigation:navigation-fragment:$navigation_version"
@@ -90,3 +100,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
 }
+
+// Google Services
+apply plugin: 'com.google.gms.google-services'

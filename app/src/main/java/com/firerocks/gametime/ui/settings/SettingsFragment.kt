@@ -1,0 +1,6 @@
+package com.firerocks.gametime.ui.settings
+
+import androidx.fragment.app.Fragment
+
+class SettingsFragment : Fragment(){
+}
